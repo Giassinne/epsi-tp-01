@@ -1,0 +1,10 @@
+<div class="form-container">
+  <h1>Ajouter un livre</h1>
+  <form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="title" placeholder="Titre du livre">
+    <input type="text" formControlName="author" placeholder="Nom de l'auteur">
+    <input type="text" formControlName="description" placeholder="Description du livre">
+    <input type="text" formControlName="category" placeholder="Catégorie du livre">
+    <button type="submit">Ajouter le livre</button>
+  </form>
+</div>
